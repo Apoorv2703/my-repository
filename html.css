@@ -1,0 +1,168 @@
+.parent-div {
+    display: flex;
+}
+
+.nav-bar {
+    background-color: blanchedalmond;
+    font-size: 30px;
+    position: relative;
+    top: 30px;
+    height: 40px;
+    gap: 50px;
+    display: flex;
+    width: fit-content;
+    margin: 50px;
+    border-radius: 20px;
+    padding: 4px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-left: 350px;
+}
+
+.nav-item {
+    color: black;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 4px 8px;
+    text-decoration: none;
+    transition: transform 0.5s;    
+}
+
+.nav-item:focus {
+    background-color: red;
+    color: white;
+}
+
+.nav-item:hover {
+    transform: translateY(-10%);
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-img, .right-img {
+    height: 280px;
+    width: 280px;
+}
+
+.profile-img {
+    height: 300px;
+    width: 280px;
+    border-radius: 50px;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.layout {
+    display: flex;
+    position: relative;
+    left: 300px;
+    top: 100px;
+}
+
+.title-text {
+    font-size: 20px;
+    font-weight: bolder;
+    height: 50px;
+    position: absolute;
+    top: -40px;
+}
+
+.profile-img-container {
+    height: 300px;
+    border-radius: 50px;
+    background-color: violet;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out; 
+    cursor: pointer;
+}
+
+.background-text {
+    font-size: 240px;
+    font-weight: 900;
+    position: absolute;
+    z-index: -1;
+    top: 510px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.background-text span {
+    display: inline-block;
+    animation: slidingText 10s linear infinite;
+}
+
+.background-text .text1 {
+    animation-delay: 0s;
+}
+
+.background-text .text2 {
+    animation-delay: 2s;
+}
+
+.background-text .text3 {
+    animation-delay: 4s;
+}
+
+.background-text .text4 {
+    animation-delay: 6s;
+}
+
+.profile-img-container:hover {
+    transform: rotateY(180deg);
+}
+
+.right-img, .left-img {
+    animation: bouncingAnimation 4s linear infinite;
+}
+
+@keyframes bouncingAnimation {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slidingText {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.cta-text{
+    border: 5px solid #EFF0FF;
+
+    padding:20px    ;
+    border-radius:50px;
+    margin-top: ;
+    font-weight: 700;
+    font-size: 24px;
+
+}
+.cta-text span{
+    display: inline-block;
+    margin: 5px 20px;
+    
+}
