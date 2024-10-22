@@ -1,12 +1,11 @@
 :root {
-    overflow-x: hidden;
+    display: flex;
     font-family: Public Sans, Public Sans Placeholder, sans-serif;
 }
 .nav-container {
     display: flex;
     justify-content: center;
 }
-
 .navbar {
     background-color: aquamarine;
     border-radius: 10px;
@@ -16,8 +15,8 @@
     align-items: center;
     justify-content: space-evenly;
     gap: 10px;
-}
 
+}
 .highlighted-nav {
     padding: 4px 8px;
     border-radius: 10px;
@@ -30,7 +29,6 @@
 .highlighted-nav:hover {
     transform: translateY(-10%);
 }
-
 .highlighted-nav:focus {
     background-color: orange;
     margin: 1px 1px;
@@ -41,17 +39,102 @@
     display: flex;
 }
 
-.left,
-.right {
+.left, .right {
     display: flex;
     flex-direction: column;
 }
 
-.left-img,
-.right-img {
+.left-img, .right-img {
     height: 280px;
     width: 280px;
 }
+
+.profile-img-container {
+    background-color: rgb(102, 112, 255);
+    height: 280px;
+    overflow: hidden;
+    border-radius: 40px;
+    transition: transform 0.5s ease-in-out;
+}
+.background-text {
+    font-family: Public Sans, sans-serif;
+    font-size: 240px;
+    font-weight: 900;
+    position: absolute;
+    z-index: -1;
+    top: 300px;
+}
+.title-text {
+    font-family: Public Sans, sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+}
+.profile-img {
+    height: 420px;
+    width: 280px;
+}
+
+
+.flex-layout{
+    display: flex;
+    justify-content: center;
+}
+
+.background-text{
+    text-align: center;
+    width: 100%;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+Yash Priyam — 10/18/2024 10:27 AM
+@everyone code till yesterday
+
+```css
+.nav-container {
+  display: flex;
+  justify-content: center;
+Expand
+style.css
+3 KB
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+Expand
+index.html
+3 KB
+@everyone code till yesterday, please have this running in your local machine to begin with today
+Divyansh rathore — 10/18/2024 11:48 AM
+@everyone 2:00 PM gonna be long day pack your tiffin's and come let's complete the website today !! XD
+Yash Priyam — 10/18/2024 3:48 PM
+Image flip transition:
+@everyone 
+
+<div class="profile-container">
+            <div class="profile-img-container">
+              <img
+                class="profile-img"
+                src="https://framerusercontent.com/images/CVICQI4s8tTiJBrNEN8nOXCzdK0.png?scale-down-to=1024"
+                alt="profile-img"
+              />
+            </div>
+            <div class="profile-img-back">
+              <img
+                class="right-img"
+                src="https://framerusercontent.com/images/l1KkpEI9tJzqQPgJDNKytRuxgeI.png?scale-down-to=512"
+                alt="blob-img"
+              />
+            </div>
+          </div>
+
 
 .profile-img-container,
 .profile-img-back {
@@ -71,7 +154,7 @@
     text-align: center;
     transform: rotateY(180deg);
     position: absolute;
-    top: 308px;
+    top: 365px;
     z-index: -1;
 }
 
@@ -85,9 +168,166 @@
 .profile-container:hover .profile-img-back {
     transform: rotateY(0deg);
 }
+Arvind Devda — 10/19/2024 10:28 AM
+@Yash Priyam sir please send the code
+Divyansh rathore — 10/19/2024 2:42 PM
+@students enjoy the weekend!! See you on Monday, forwarding you the feedback form !!!
+sakshi uprale — 10/19/2024 2:43 PM
+Thankyou sir 🫠🥰
+simran — 10/19/2024 9:19 PM
+sir code send krdijiye
+simran — Yesterday at 9:49 AM
+Sir today's timing????
+Ritik — Yesterday at 10:06 AM
+5 PM
+Divyansh rathore — Yesterday at 10:32 AM
+https://forms.gle/pkF9obDpS4nxToWY6 // Guys fill this form befor you guys come today. '
+Google Docs
+Class Feedback Form
+Thank you for being a part of Webmasters! Your thoughts and suggestions are crucial for us to continually improve our courses and provide the best learning experience possible. Please take a moment to share your feedback on the classes, instructors, and any areas where we can enhance your learning journey. Your input will help us refine our appr...
+Image
+Divyansh rathore — Yesterday at 12:41 PM
+Class timing:5:00PM
+apoorv — Yesterday at 5:44 PM
+https://apoorv2703.github.io/my-repository/
+Nayak ji — Yesterday at 5:44 PM
+deployed link -  https://nayakjii8.github.io/Myportfolio/
+apoorv — Yesterday at 5:45 PM
+https://apoorv2703.github.io/my-repository/ deployed my website
+tarun — Yesterday at 5:46 PM
+https://tarunmore.github.io/Myportfolio/
+deployed website
+Ravi Pal — Yesterday at 5:56 PM
+https://ravipal49.github.io/Mywebsite/ deployed website
+Arvind Devda — Yesterday at 5:57 PM
+https://arvinddevda11.github.io/My-Portfolio/ deployed my website
+Sujal prajapati — Yesterday at 6:25 PM
+https://sujal14012002.github.io/mywebsite/
+Image
+Nayak ji — Yesterday at 6:30 PM
+Image
+Yash Priyam — Yesterday at 6:51 PM
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+Expand
+portfolio.html
+10 KB
+:root {
+    overflow-x: hidden;
+    font-family: Public Sans, Public Sans Placeholder, sans-serif;
+}
+.nav-container {
+    display: flex;
+Expand
+portfolio.css
+8 KB
+Yash Priyam — Today at 1:14 PM
+Today's class timings are 5pm
+@everyone
+Yash Priyam — Today at 5:00 PM
+@everyone updated code for Portfolio website
+<!DOCTYPE html>
+<html>
 
+<head>
+    <link rel="stylesheet" href="index.css" />
+</head>
+Expand
+index.html
+11 KB
+:root {
+    display: flex;
+    font-family: Public Sans, Public Sans Placeholder, sans-serif;
+}
+.nav-container {
+    right: 480px;
+    margin-top: 10px;
+    position: fixed;
+    z-index: 10000;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 20px 0px;
+    border-radius: 40px;
+    font-size: 14px;
+    padding: 2px;
+    gap: 10px;
+    width: 30vw;
+}
+
+.highlighted-nav {
+    padding: 18px;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+}
+
+.highlighted-nav:hover {
+    transform: translateY(-10%);
+}
+
+.highlighted-nav:focus {
+    border-radius: 40px;
+    background-color: #F94705;
+    margin: 1px 1px;
+    transform: translateY(0%);
+}
+
+.hero-container {
+    margin-top: 40px;
+}
+.flex-layout {
+    display: flex;
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-img,
+.right-img {
+    height: 240px;
+    width: 240px;
+}
+
+.left-img:nth-child(2) {
+    position: relative;
+    right: 60px;
+}
+.right-img:nth-child(2) {
+    position: relative;
+    left: 60px;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+.center div {
+    position: relative;
+    z-index: 1;
+}
+.title-text {
+    font-size: 48px;
+    font-weight: 500;
+}
 .sliding-text-container {
-    max-width: 100vw;
+    width: 100%;
+    overflow: hidden;
 }
 
 .bg-text {
@@ -95,12 +335,119 @@
     font-size: 240px;
     font-weight: 900;
     z-index: -1;
-    top: 350px;
+    top: 260px;
+    overflow: hidden;
+}
+... (390 lines left)
+Collapse
+index.css
+9 KB
+@everyone 
+For all those who might miss today's class, we are going to start building a startup idea today specially for college studnets
+﻿
+:root {
+    display: flex;
+    font-family: Public Sans, Public Sans Placeholder, sans-serif;
+}
+.nav-container {
+    right: 480px;
+    margin-top: 10px;
+    position: fixed;
+    z-index: 10000;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 20px 0px;
+    border-radius: 40px;
+    font-size: 14px;
+    padding: 2px;
+    gap: 10px;
+    width: 30vw;
+}
+
+.highlighted-nav {
+    padding: 18px;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+}
+
+.highlighted-nav:hover {
+    transform: translateY(-10%);
+}
+
+.highlighted-nav:focus {
+    border-radius: 40px;
+    background-color: #F94705;
+    margin: 1px 1px;
+    transform: translateY(0%);
+}
+
+.hero-container {
+    margin-top: 40px;
+}
+.flex-layout {
+    display: flex;
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-img,
+.right-img {
+    height: 240px;
+    width: 240px;
+}
+
+.left-img:nth-child(2) {
+    position: relative;
+    right: 60px;
+}
+.right-img:nth-child(2) {
+    position: relative;
+    left: 60px;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+.center div {
+    position: relative;
+    z-index: 1;
+}
+.title-text {
+    font-size: 48px;
+    font-weight: 500;
+}
+.sliding-text-container {
+    width: 100%;
     overflow: hidden;
 }
 
+.bg-text {
+    position: absolute;
+    font-size: 240px;
+    font-weight: 900;
+    z-index: -1;
+    top: 260px;
+    overflow: hidden;
+}
 .sliding-text {
     display: flex;
+    width: 100vw;
     overflow: hidden;
     animation: slide 20s linear infinite;
 }
@@ -119,12 +466,36 @@
         /* Adjust based on the number of duplicates */
     }
 }
-
-.title-text {
-    font-size: 48px;
-    font-weight: 500;
+.profile-container {
+    position: relative;
+    width: fit-content;
+    height: 280px;
+}
+.profile-img-container,
+.profile-img-back {
+    background-color: rgb(102, 112, 255);
+    height: 280px;
+    overflow: hidden;
+    border-radius: 40px;
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+    width: 280px;
+    backface-visibility: hidden;
+}
+.profile-img-back {
+    bottom: 280px;
+    text-align: center;
+    transform: rotateY(180deg);
+    /* top: 238px; */
 }
 
+.profile-container:hover .profile-img-container {
+    transform: rotateY(180deg);
+}
+
+.profile-container:hover .profile-img-back {
+    transform: rotateY(0deg);
+}
 .profile-img {
     height: 420px;
     width: 280px;
@@ -135,17 +506,12 @@
     justify-content: center;
 }
 
-.background-text {
+/* .background-text {
     text-align: center;
     width: 100%;
-}
+} */
 
-.center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .right-img,
 .left-img {
@@ -177,7 +543,7 @@
 .flip-text {
     position: relative;
     overflow: hidden;
-    height: 50px;
+    height: 40px;
     width: 300px;
 }
 
@@ -188,6 +554,9 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(77, 77, 77);
 }
 
 .skills span {
@@ -236,26 +605,63 @@
 .skills span:nth-child(3) {
     animation-delay: 6s;
 }
+
+.testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.testimonials-images {
+    display: flex;
+    position: relative;
+}
+.test-img-1:nth-child(1) {
+    position: inherit;
+    left: 18px;
+}
+.test-img-1:nth-child(2) {
+    position: inherit;
+    left: 8px;
+}
+.test-img-1 img {
+    border: 3px solid white;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+}
+.testimonials-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(77, 77, 77);
+    margin-left: 8px;
+}
 .cta-container {
     display: flex;
-    margin-top: 40px;
     justify-content: center;
     align-items: center;
-}
-.cta-text {
+    border: 5px solid #EFF0FF;
+    border-radius: 50px;
     overflow: hidden;
+    transition: all 0.8s ease-in-out;
+}
+.cta-container:hover {
+    padding: 0px 30px;
+    /* width: calc(90% + 10px); */
+}
+
+.cta-text {
+    left: 38px;
     display: flex;
     align-items: center;
-    border-radius: 50px;
-    border: 5px solid #EFF0FF;
-    /* padding: 20px; */
     font-weight: 700;
     font-size: 24px;
+    transition: all 0.8s ease-in-out;
 }
-.cta-text span {
-    display: inline-block;
-    margin: 5px 20px;
+
+.cta-container:hover .cta-text {
+    transform: translateX(-40px);
 }
+
 .cta-arrow-image {
     height: 75px;
     width: 75px;
@@ -265,16 +671,9 @@
     transform: rotate(90deg) translateX(0px);
     transition: all 0.8s ease-in-out;
     position: relative;
-    right: -75px;
+    right: -105px;
 }
-.cta-container:hover {
-    transform: scaleX(1.05);
-    padding: 0px 10px;
-}
-.cta-text:hover span {
-    transform: translateX(-20px);
-}
-.cta-text:hover .cta-arrow-image  {
+.cta-container:hover .cta-arrow-image  {
     opacity: 1;
     transform: translateX(-75px) rotate(0deg);
 }
@@ -299,6 +698,7 @@
     position: sticky;
     top: 200px;
 }
+
 .about-me-bg {
     position: absolute;
     display: flex;
@@ -308,9 +708,11 @@
     z-index: -1;
     animation: bouncingAnimation 3s linear infinite;;
 }
+
 .about-me-bg:hover {
     transform: scale(1.2);
 }
+
 .section-title {
     font-size: 38px;
     padding: 24px;
@@ -400,19 +802,35 @@
 .footer {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 200px;
+    justify-content: space-between;
+    height: 70vh;
+    align-items: center;
+    background-color: #FAFAFA;
 }
 .footer-info {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 140px;
 }
 .contact-me, .useful-links, .social {
     display: flex;
     flex-direction: column;
+    font-size: 28px;
+    justify-content: space-evenly;
+    
+}
+.contact-me div, .useful-links div, .social div {
+    font-size: 18px;
+    padding: 10px 0px;
+    color: rgb(77, 77, 77);
+    font-weight: 400;
+}
+.contact-me div:first-child, .useful-links div:first-child, .social div:first-child{
+    margin-top: 20px;
 }
 .foot-title {
-    font-size: 200px;
+    font-size: 14vw;
     font-weight: 900;
     overflow: hidden;
-}
+    margin-top: 100px;
